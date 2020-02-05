@@ -1,0 +1,214 @@
+<!doctype html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>iframe-contents-template</title>
+  <meta name="description" content="这是一个 user 页面">
+  <meta name="keywords" content="user">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <link rel="stylesheet" href="assets/css/amazeui.min.css"/>
+  <link rel="stylesheet" href="assets/css/admin.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+<div class="am-cf admin-main" style="padding-top: 0;">
+
+
+  <!-- content start -->
+  <div class="admin-content">
+    <div class="admin-content-body">
+      <div class="am-cf am-padding am-padding-bottom-0">
+        <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">版本管理</strong> / <small>Version control</small><mark><small> 注:双击版本名称,可进行修改操作</small></mark></div>
+      </div>
+      <hr/>
+      <form class="am-form-inline am-padding" role="form">
+
+        <div class="am-form-group rex-margin-right-15">
+          <span>版本名称：</span>
+          <input type="text" class="am-input-sm am-form-field rex-width-200 rex-height-38" placeholder="请输入版本名称">
+        </div>
+
+        <div class="am-form-group rex-margin-right-15">
+          <span>选择部门：</span>
+          <select class="am-input-sm am-form-field rex-width-200 rex-height-38">
+            <option value="">全部</option>
+            <option value="">H2</option>
+            <option value="">H2O</option>
+            <option value="">O2</option>
+          </select>
+        </div>
+
+
+
+
+        <button type="button" class="am-btn am-btn-md am-btn-primary"><i class="am-icon-plus"></i> 添加</button>
+      </form>
+
+      <form class="am-form-inline am-padding" role="form">
+        <div class="am-form-group rex-margin-right-15">
+          <span>选择部门：</span>
+          <select class="am-input-sm am-form-field rex-width-200 rex-height-38">
+            <option value="">全部</option>
+            <option value="">H2</option>
+            <option value="">H2O</option>
+            <option value="">O2</option>
+          </select>
+        </div>
+        <button type="button" class="am-btn am-btn-md am-btn-warning"><i class="am-icon-search"></i> 搜索</button>
+      </form>
+
+
+      <!-- 表格 -->
+      <div class="am-padding">
+        <table class="am-table am-table-bordered am-table-striped am-table-compact am-text-center am-table-hover">
+          <thead class="rex-bg-success" style="color: #fff;">
+          <tr>
+            <th class="am-text-center rex-width-25percent">版本名称</th>
+            <th class="am-text-center rex-width-25percent">部门名称</th>
+            <th class="am-text-center rex-width-25percent">创建时间 </th>
+            <th class="am-text-center rex-width-25percent">更新时间</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td class="dbclick rex-no-selected">
+              <span>21</span>
+              <input type="text" class="rex-margin-up-down-6 changeitems am-input-sm am-hide rex-input-inline am-form-field" placeholder="请输入修改后的名称">
+              <a href="javascript:;" class="changeitems am-hide rex-padding-left-right-15">保存</a>
+              <a href="javascript:;" class="changeitems am-hide cancel rex-padding-left-right-15">取消</a>
+            </td>
+            <td class="dbclick rex-no-selected">
+              <span>android</span>
+              <input type="text" class="rex-margin-up-down-6 changeitems am-input-sm am-hide rex-input-inline am-form-field" placeholder="请输入修改后的名称">
+              <a href="javascript:;" class="changeitems am-hide rex-padding-left-right-15">保存</a>
+              <a href="javascript:;" class="changeitems am-hide cancel rex-padding-left-right-15">取消</a>
+            </td>
+            <td>
+              2016-09-02 17:23:58
+            </td>
+            <td>
+              2016-09-02 17:23:58
+            </td>
+          </tr>
+          <tr>
+            <td class="dbclick rex-no-selected">
+              <span>23</span>
+              <input type="text" class="rex-margin-up-down-6 changeitems am-input-sm am-hide rex-input-inline am-form-field" placeholder="请输入修改后的名称">
+              <a href="javascript:;" class="changeitems am-hide rex-padding-left-right-15">保存</a>
+              <a href="javascript:;" class="changeitems am-hide cancel rex-padding-left-right-15">取消</a>
+            </td>
+            <td class="dbclick rex-no-selected">
+              <span>ios</span>
+              <input type="text" class="rex-margin-up-down-6 changeitems am-input-sm am-hide rex-input-inline am-form-field" placeholder="请输入修改后的名称">
+              <a href="javascript:;" class="changeitems am-hide rex-padding-left-right-15">保存</a>
+              <a href="javascript:;" class="changeitems am-hide cancel rex-padding-left-right-15">取消</a>
+            </td>
+            <td>
+              2016-09-02 17:23:58
+            </td>
+            <td>
+              2016-09-02 17:23:58
+            </td>
+          </tr>
+          <tr>
+            <td class="dbclick rex-no-selected">
+              <span>7</span>
+              <input type="text" class="rex-margin-up-down-6 changeitems am-input-sm am-hide rex-input-inline am-form-field" placeholder="请输入修改后的名称">
+              <a href="javascript:;" class="changeitems am-hide rex-padding-left-right-15">保存</a>
+              <a href="javascript:;" class="changeitems am-hide cancel rex-padding-left-right-15">取消</a>
+            </td>
+            <td class="dbclick rex-no-selected">
+              <span>php-api</span>
+              <input type="text" class="rex-margin-up-down-6 changeitems am-input-sm am-hide rex-input-inline am-form-field" placeholder="请输入修改后的名称">
+              <a href="javascript:;" class="changeitems am-hide rex-padding-left-right-15">保存</a>
+              <a href="javascript:;" class="changeitems am-hide cancel rex-padding-left-right-15">取消</a>
+            </td>
+            <td>
+              2016-09-02 17:23:58
+            </td>
+            <td>
+              2016-09-02 17:23:58
+            </td>
+          </tr>
+
+
+          </tbody>
+        </table>
+      </div>
+
+      <!-- 分页 -->
+      <div class="am-padding">
+        <ul data-am-widget="pagination" class="am-pagination am-pagination-centered">
+             <li class="am-pagination-first ">
+               <a href="#" class="">第一页</a>
+             </li>
+             <li class="am-pagination-prev ">
+               <a href="#" class="">上一页</a>
+             </li>
+                   <li class="">
+                     <a href="#" class="">1</a>
+                   </li>
+                   <li class="am-active">
+                     <a href="#" class="am-active">2</a>
+                   </li>
+                   <li class="">
+                     <a href="#" class="">3</a>
+                   </li>
+                   <li class="">
+                     <a href="#" class="">4</a>
+                   </li>
+                   <li class="">
+                     <a href="#" class="">5</a>
+                   </li>
+             <li class="am-pagination-next ">
+               <a href="#" class="">下一页</a>
+             </li>
+             <li class="am-pagination-last ">
+               <a href="#" class="">最末页</a>
+             </li>
+         </ul>
+      </div>
+    <!-- content -->
+
+
+    </div>
+
+    <footer class="admin-content-footer am-text-center">
+      <hr>
+      <p class="am-padding-left">www.dailyyoga.com Copyright © 2012-2016</p>
+      <p class="am-padding-left">西安瑜乐软件科技有限公司</p>
+    </footer>
+
+  </div>
+  <!-- content end -->
+
+
+<script type="text/javascript" src="js/jq.js"></script>
+<script src="assets/js/amazeui.min.js"></script>
+<script type="text/javascript">
+  $(function(){
+    $('td.dbclick').dblclick(function(){
+      var vm = $(this);
+      vm.find('.changeitems').removeClass('am-hide');
+      vm.find('.cancel').click(function(){
+        vm.find('.changeitems').addClass('am-hide');
+      })
+    })
+  })
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

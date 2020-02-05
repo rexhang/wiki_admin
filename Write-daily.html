@@ -1,0 +1,142 @@
+<!doctype html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>iframe-contents-template</title>
+  <meta name="description" content="这是一个 user 页面">
+  <meta name="keywords" content="user">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <link rel="stylesheet" href="assets/css/amazeui.min.css"/>
+  <link rel="stylesheet" href="assets/css/admin.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="alert">
+
+</div>
+
+<div class="am-cf admin-main" style="padding-top: 0;">
+
+
+  <!-- content start -->
+  <div class="admin-content">
+    <div class="admin-content-body">
+      <div class="am-cf am-padding am-padding-bottom-0">
+        <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">写日报</strong> / <small>Write daily</small><mark><small> （提示：“事项”请填写当日工作内容，日报请于当日提交，系统不支持补发。） </small></mark></div>
+      </div>
+      <hr/>
+      <div class="am-padding">
+        <form class="am-form-inline" role="form">
+          <div class="rex-margin-bottom-15">
+            <article class="am-comment">
+              <div class="rex-border-eee">
+                <header class="am-comment-hd">
+                  <div class="am-comment-meta">
+                    <a href="#my" class="am-comment-author">我的</a>
+                    今日事项：
+                    <a href="javascript:;" onclick="document.getElementById('myworking').value = '';" class="am-fr rex-text-color-warning"><i class="am-icon-trash"></i> 清空输入</a>
+                  </div>
+                </header>
+
+                <div class="am-comment-bd">
+                  <textarea autofocus id="myworking" class="rex-textarea rex-text-color-666" placeholder="开始输入我的今日事项"></textarea>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="am-form-group rex-margin-right-15">
+            <span>消耗时间（单位/小时）：</span>
+            <input type="number" class="am-input-sm am-form-field rex-width-200 rex-height-38" placeholder="请输入消耗时间">
+          </div>
+
+          <button type="button" class="am-btn am-btn-success"><i class="am-icon-plus"></i> 添加事件</button>
+
+          </form>
+
+          <!-- 表格 -->
+          <table class="am-table am-table-bordered am-table-radius am-table-striped am-table-hover rex-margin-top-15 am-text-center">
+              <thead>
+                  <tr>
+                      <th class="am-text-center">事项</th>
+                      <th class="am-text-center">耗时(小时)</th>
+                      <th class="am-text-center">操作</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td>完成了Amaze UI</td>
+                      <td>4</td>
+                      <td>
+                        <a href="javascript:;" class="am-badge am-badge-danger"><i class="am-icon-trash"></i> 删除</a>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>完成了Amaze UI</td>
+                      <td>4</td>
+                      <td>
+                        <a href="javascript:;" class="am-badge am-badge-danger"><i class="am-icon-trash"></i> 删除</a>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>完成了Amaze UI</td>
+                      <td>4</td>
+                      <td>
+                        <a href="javascript:;" class="am-badge am-badge-danger"><i class="am-icon-trash"></i> 删除</a>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>完成了Amaze UI</td>
+                      <td>4</td>
+                      <td>
+                        <a href="javascript:;" class="am-badge am-badge-danger"><i class="am-icon-trash"></i> 删除</a>
+                      </td>
+                  </tr>
+              </tbody>
+          </table>
+
+          <button type="button" class="am-btn am-btn-secondary" onclick="isalert('提交成功！')"><i class="am-icon-save"></i> 提交并保存</button>
+
+      </div>
+    <!-- content -->
+
+    </div>
+
+    <footer class="admin-content-footer am-text-center">
+      <hr>
+      <p class="am-padding-left">www.dailyyoga.com Copyright © 2012-2016</p>
+      <p class="am-padding-left">西安瑜乐软件科技有限公司</p>
+    </footer>
+
+  </div>
+  <!-- content end -->
+
+<script type="text/javascript" src="js/jq.js"></script>
+<script src="assets/js/amazeui.min.js"></script>
+<script type="text/javascript">
+  // 提示功能
+  function isalert(msg,status,times){
+    if(status){status = status} else{status = 'success'}; // 默认成功样式
+    if(times){times = times} else{times = 1000}; // 默认1秒自动消失
+    var alertTags = '<div class="am-alert am-text-center am-alert-'+status+'" data-am-alert><button type="button" id="alertclose" class="am-close">&times;</button><p>'+msg+'</p></div>';
+    $("#alert").append(alertTags);
+    setTimeout(function(){
+      $('#alertclose').trigger('click');
+    },times);
+  };
+  //alert('hello','danger',3000);
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+

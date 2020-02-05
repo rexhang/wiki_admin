@@ -1,0 +1,296 @@
+<!doctype html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>iframe-contents-template</title>
+  <meta name="description" content="这是一个 user 页面">
+  <meta name="keywords" content="user">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <link rel="stylesheet" href="assets/css/amazeui.min.css"/>
+  <link rel="stylesheet" href="assets/css/admin.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="assets/css/amazeui.datetimepicker.css">
+</head>
+<body>
+
+
+<div class="am-cf admin-main" style="padding-top: 0;">
+
+
+  <!-- content start -->
+  <div class="admin-content">
+    <div class="admin-content-body">
+      <div class="am-cf am-padding am-padding-bottom-0">
+        <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">日报列表</strong> / <small>Daily list</small></div>
+      </div>
+      <hr/>
+      <form class="am-form-inline am-padding" role="form">
+        <div class="am-form-group am-form-select rex-margin-right-15">
+          <span>部门：</span>
+          <select class="am-input-sm am-form-field rex-width-200 rex-height-38">
+            <option value="">全部</option>
+            <option value="">H2</option>
+            <option value="">H2O</option>
+            <option value="">O2</option>
+          </select>
+        </div>
+
+        <div class="am-form-group rex-margin-right-15">
+          <span>人员：</span>
+          <input type="text" class="am-input-sm am-form-field rex-width-200 rex-height-38" placeholder="请输入人员信息">
+        </div>
+
+
+
+        <div class="rex-width-200 am-input-group am-form-group rex-margin-right-15 date" id="datetimepicker_start" data-date="" data-date-format="yyyy-dd-mm">
+          <input size="16" type="text" value="" onfocus="this.blur()" class="am-form-field am-input-sm" placeholder="开始时间">
+          <span class="am-input-group-label add-on"><i class="icon-th am-icon-calendar"></i></span>
+        </div>
+
+        <div class="rex-width-200 am-input-group am-form-group rex-margin-right-15 date" id="datetimepicker_end" data-date="" data-date-format="yyyy-dd-mm">
+          <input size="16" type="text" value="" onfocus="this.blur()" class="am-form-field am-input-sm" placeholder="结束时间">
+          <span class="am-input-group-label add-on"><i class="icon-th am-icon-calendar"></i></span>
+        </div>
+
+
+
+        <button type="button" class="am-btn am-btn-md am-btn-primary"><i class="am-icon-search"></i> 搜索</button>
+      </form>
+
+      <!-- 表格 -->
+      <div class="am-padding">
+        <table class="am-table am-table-bordered am-table-striped am-table-compact am-text-center am-table-hover">
+          <thead class="rex-bg-success" style="color: #fff;">
+          <tr>
+            <th class="am-text-center">人员</th>
+            <th class="am-text-center">时间</th>
+            <th class="am-text-center">详情</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td>郭晓伟</td>
+            <td>2016-08-29</td>
+            <td>
+              <a href="personal_list.php?id=1" class="am-badge am-badge-primary"><i class="am-icon-eye"></i> 查看</a>
+            </td>
+          </tr>
+          <tr>
+            <td>郭晓伟</td>
+            <td>2016-08-29</td>
+            <td>
+              <a href="personal_list.php?id=2" class="am-badge am-badge-primary"><i class="am-icon-eye"></i> 查看</a>
+            </td>
+          </tr>
+          <tr class="">
+            <td>顾航</td>
+            <td>2017-09-09</td>
+            <td>
+              <a href="personal_list.php?id=3" class="am-badge am-badge-primary"><i class="am-icon-eye"></i> 查看</a>
+            </td>
+          </tr>
+          <tr>
+            <td>郭晓伟</td>
+            <td>2016-08-29</td>
+            <td>
+              <a href="personal_list.php?id=2" class="am-badge am-badge-primary"><i class="am-icon-eye"></i> 查看</a>
+            </td>
+          </tr>
+          <tr>
+            <td>顾航</td>
+            <td>2016-08-29</td>
+            <td><a href="personal_list.php?id=2" class="am-badge am-badge-primary"><i class="am-icon-eye"></i> 查看</a></td>
+          </tr>
+          <tr>
+            <td>顾航</td>
+            <td>2016-08-29</td>
+            <td><a href="personal_list.php?id=2" class="am-badge am-badge-primary"><i class="am-icon-eye"></i> 查看</a></td>
+          </tr>
+          <tr>
+            <td>顾航</td>
+            <td>2016-08-29</td>
+            <td><a href="personal_list.php?id=2" class="am-badge am-badge-primary"><i class="am-icon-eye"></i> 查看</a></td>
+          </tr>
+          <tr>
+            <td>顾航</td>
+            <td>2016-08-29</td>
+            <td><a href="personal_list.php?id=2" class="am-badge am-badge-primary"><i class="am-icon-eye"></i> 查看</a></td>
+          </tr>
+          <tr>
+            <td>郭晓伟</td>
+            <td>2016-08-29</td>
+            <td>
+              <a href="personal_list.php?id=2" class="am-badge am-badge-primary"><i class="am-icon-eye"></i> 查看</a>
+            </td>
+          </tr>
+          <tr>
+            <td>顾航</td>
+            <td>2016-08-29</td>
+            <td><a href="personal_list.php?id=2" class="am-badge am-badge-primary"><i class="am-icon-eye"></i> 查看</a></td>
+          </tr>
+          <tr>
+            <td>顾航</td>
+            <td>2016-08-29</td>
+            <td><a href="personal_list.php?id=2" class="am-badge am-badge-primary"><i class="am-icon-eye"></i> 查看</a></td>
+          </tr>
+          <tr>
+            <td>郭晓伟</td>
+            <td>2016-08-29</td>
+            <td>
+              <a href="personal_list.php?id=2" class="am-badge am-badge-primary"><i class="am-icon-eye"></i> 查看</a>
+            </td>
+          </tr>
+          <tr>
+            <td>顾航</td>
+            <td>2016-08-29</td>
+            <td><a href="personal_list.php?id=2" class="am-badge am-badge-primary"><i class="am-icon-eye"></i> 查看</a></td>
+          </tr>
+          <tr>
+            <td>顾航</td>
+            <td>2016-08-29</td>
+            <td><a href="personal_list.php?id=2" class="am-badge am-badge-primary"><i class="am-icon-eye"></i> 查看</a></td>
+          </tr>
+          <tr>
+            <td>顾航</td>
+            <td>2016-08-29</td>
+            <td><a href="personal_list.php?id=2" class="am-badge am-badge-primary"><i class="am-icon-eye"></i> 查看</a></td>
+          </tr>
+          <tr>
+            <td>顾航</td>
+            <td>2016-08-29</td>
+            <td><a href="personal_list.php?id=2" class="am-badge am-badge-primary"><i class="am-icon-eye"></i> 查看</a></td>
+          </tr>
+          <tr>
+            <td>顾航</td>
+            <td>2016-08-29</td>
+            <td><a href="personal_list.php?id=2" class="am-badge am-badge-primary"><i class="am-icon-eye"></i> 查看</a></td>
+          </tr>
+          <tr>
+            <td>顾航</td>
+            <td>2016-08-29</td>
+            <td><a href="personal_list.php?id=2" class="am-badge am-badge-primary"><i class="am-icon-eye"></i> 查看</a></td>
+          </tr>
+          <tr>
+            <td>郭晓伟</td>
+            <td>2016-08-29</td>
+            <td>
+              <a href="personal_list.php?id=2" class="am-badge am-badge-primary"><i class="am-icon-eye"></i> 查看</a>
+            </td>
+          </tr>
+          <tr>
+            <td>顾航</td>
+            <td>2016-08-29</td>
+            <td><a href="personal_list.php?id=2" class="am-badge am-badge-primary"><i class="am-icon-eye"></i> 查看</a></td>
+          </tr>
+          <tr>
+            <td>顾航</td>
+            <td>2016-08-29</td>
+            <td><a href="personal_list.php?id=2" class="am-badge am-badge-primary"><i class="am-icon-eye"></i> 查看</a></td>
+          </tr>
+          <tr>
+            <td>顾航</td>
+            <td>2016-08-29</td>
+            <td><a href="personal_list.php?id=2" class="am-badge am-badge-primary"><i class="am-icon-eye"></i> 查看</a></td>
+          </tr>
+          <tr>
+            <td>顾航</td>
+            <td>2016-08-29</td>
+            <td><a href="personal_list.php?id=2" class="am-badge am-badge-primary"><i class="am-icon-eye"></i> 查看</a></td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- 分页 -->
+      <div class="am-padding">
+        <ul data-am-widget="pagination" class="am-pagination am-pagination-centered">
+             <li class="am-pagination-first ">
+               <a href="#" class="">第一页</a>
+             </li>
+             <li class="am-pagination-prev ">
+               <a href="#" class="">上一页</a>
+             </li>
+                   <li class="">
+                     <a href="#" class="">1</a>
+                   </li>
+                   <li class="am-active">
+                     <a href="#" class="am-active">2</a>
+                   </li>
+                   <li class="">
+                     <a href="#" class="">3</a>
+                   </li>
+                   <li class="">
+                     <a href="#" class="">4</a>
+                   </li>
+                   <li class="">
+                     <a href="#" class="">5</a>
+                   </li>
+             <li class="am-pagination-next ">
+               <a href="#" class="">下一页</a>
+             </li>
+             <li class="am-pagination-last ">
+               <a href="#" class="">最末页</a>
+             </li>
+         </ul>
+      </div>
+    <!-- content -->
+
+
+    </div>
+
+    <footer class="admin-content-footer am-text-center">
+      <hr>
+      <p class="am-padding-left">www.dailyyoga.com Copyright © 2012-2016</p>
+      <p class="am-padding-left">西安瑜乐软件科技有限公司</p>
+    </footer>
+
+  </div>
+  <!-- content end -->
+
+<script type="text/javascript" src="js/jq.js"></script>
+<script src="assets/js/amazeui.min.js"></script>
+<script type="text/javascript" src="assets/js/amazeui.datetimepicker.min.js" charset="UTF-8"></script>
+<script type="text/javascript">
+  $.fn.datetimepicker.dates['zh-CN'] = {
+    days: ["星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六", "星期日"],
+    daysShort: ["周日", "周一", "周二", "周三", "周四", "周五", "周六", "周日"],
+    daysMin:  ["日", "一", "二", "三", "四", "五", "六", "日"],
+    months: ["一月", "二月", "三月", "四月", "五月", "六月", "七月", "八月", "九月", "十月", "十一月", "十二月"],
+    monthsShort: ["一月", "二月", "三月", "四月", "五月", "六月", "七月", "八月", "九月", "十月", "十一月", "十二月"],
+    today: "今天",
+    suffix: [],
+    meridiem: ["上午", "下午"],
+    rtl: true // 从右向左书写的语言你可以使用 rtl: true 来设置
+  };
+  $('#datetimepicker_start').datetimepicker({
+    format: 'yyyy-mm-dd',
+    language:  'zh-CN',
+    autoclose: true,
+    todayHighlight: true,
+    keyboardNavigation: false,
+    showMeridian: true,
+    minView:2
+  })
+  $('#datetimepicker_end').datetimepicker({
+    format: 'yyyy-mm-dd',
+    language:  'zh-CN',
+    autoclose: true,
+    todayHighlight: true,
+    keyboardNavigation: false,
+    showMeridian: true,
+    minView:2
+  });
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+

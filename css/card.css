@@ -1,0 +1,65 @@
+.card{
+    border-radius: 4px;
+    box-shadow: 3px 3px 3px #333;
+    background: url('http://qiniucdn.dailyyoga.com.cn/af/d7/afd72a964396f2e6dffca7bc55fa5c32.jpeg');
+    padding: 15px 0;
+}
+.tit{
+    margin-top: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+.tit img{
+    border: 4px solid #d4eceb;
+    border-radius: 50%;
+    border-radius: 100px;
+}
+input{
+    height: 38px;
+    color: #999 !important;
+}
+.am-form-icon [class*=am-icon-]{
+    margin-top: -0.4em !important;
+}
+.am-form-group{
+    margin-bottom: 1rem !important;
+}
+
+/*遮罩层*/
+#mask{
+    width: 100px;height: 100px;line-height: 100px;
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
+    top: 0;
+    z-index: 2;
+    border-radius: 50%;
+    border-radius: 100px;
+    cursor: pointer;
+}
+#file{
+    width: 100px;height: 100px;line-height: 100px;display: inline-block;
+    opacity: 0;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
+    top: 0;
+    z-index: 3;
+    border-radius: 50%;
+    border-radius: 100px;
+    cursor: pointer;
+}
+.show_area{
+    display: none;
+}
+#setfotter{
+    padding-top: 40px;
+    color: #fff;
+    width: 100%;
+}
+body{
+    overflow: auto;
+}

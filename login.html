@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>登录</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <link rel="shortcut icon" href="favicon.ico" />
+  <link rel="bookmark" href="favicon.ico" />
+  <link rel="stylesheet" href="assets/css/amazeui.min.css"/>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    @keyframes navbaranimations{
+      0%{background: #ff7300;}
+      20%{background: #ff8300;}
+      40%{background: #ff9300;}
+      60%{background: #ff1300;}
+      80%{background: #ff2300;}
+    }
+    .header{
+      -webkit-animation-name: navbaranimations;
+      /*动画名称*/
+      -webkit-animation-duration: 10s;
+      /*动画持续时间*/
+      -webkit-animation-timing-function: linear;
+      /*动画过渡方式*/
+      -webkit-animation-delay: 0s;
+      /*动画延时*/
+      -webkit-animation-iteration-count: infinite;
+      /*动画执行次数*/
+      -webkit-animation-direction: alternate;
+      /*是否应该轮流反向播放动画*/
+      -webkit-animation-fill-mode: forwards;
+      /*动画执行完毕最后的停留位置*/
+    }
+  </style>
+</head>
+<body>
+<div class="header rex-bg-warning rex-padding-up-down-6 am-text-center">
+  <img src="img/logo-big.png" alt="">
+</div>
+<div class="am-g">
+  <div class="am-u-lg-6 am-u-sm-centered">
+    <h2 class="am-text-center rex-text-color-666 rex-padding-top-100">登录账户</h2>
+    <hr>
+    <form class="am-form am-form-horizontal am-u-lg-10 am-u-lg-offset-1">
+      <div class="am-form-group">
+        <label for="doc-ipt-3" class="am-u-sm-2 am-form-label">账号</label>
+        <div class="am-u-sm-10">
+          <div class="am-form-group am-form-icon">
+            <i class="am-icon-user am-text-primary"></i>
+            <input type="text" id="doc-ipt-3" class="rex-padding-left-28" autofocus placeholder="请输入您的手机号码">
+          </div>
+
+        </div>
+      </div>
+      <div class="am-form-group">
+        <label for="doc-ipt-pwd-2" class="am-u-sm-2 am-form-label">密码</label>
+        <div class="am-u-sm-10">
+          <div class="am-form-group am-form-icon">
+            <i class="am-icon-lock am-text-primary"></i>
+            <input type="password" id="doc-ipt-pwd-2" class="rex-padding-left-28" placeholder="请输入您的密码">
+          </div>
+
+        </div>
+      </div>
+      <div class="am-form-group">
+        <div class="am-u-sm-offset-2 am-u-sm-10">
+          <div class="checkbox">
+            <label>
+              <input type="checkbox"> 记住密码
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="am-form-group">
+        <div class="am-u-sm-10 am-u-sm-offset-2">
+          <a id="login_system" href="index.php" class="am-btn am-btn-success am-radius am-fl">登入系统</a>
+          <a href="forget.html" class="am-btn am-btn-danger am-radius am-fr">忘记密码</a>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+<script type="text/javascript" src="js/jq.js"></script>
+<script type="text/javascript">
+  $(function(){
+    $("#login_system").click(function(){
+      window.location.href = $(this).attr('href');
+    });
+    $("input").focus(function(){
+      $("body").keyup(function(e){
+        var key = e.keyCode;
+        if(key == 13 || key == 108){
+          $("#login_system").trigger("click");
+        };
+      });
+    });
+  });
+</script>
+</body>
+</html>

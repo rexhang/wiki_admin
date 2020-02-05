@@ -1,0 +1,186 @@
+<!doctype html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>iframe-contents-template</title>
+  <meta name="description" content="这是一个 user 页面">
+  <meta name="keywords" content="user">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <link rel="stylesheet" href="assets/css/amazeui.min.css"/>
+  <link rel="stylesheet" href="assets/css/admin.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+<div class="am-cf admin-main" style="padding-top: 0;">
+
+
+  <!-- content start -->
+  <div class="admin-content">
+    <div class="admin-content-body">
+      <div class="am-cf am-padding am-padding-bottom-0">
+        <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">菜单管理</strong> / <small style="white-space: nowrap;">Menu control</small><mark><small> 注:双击排序,可进行修改操作</small></mark></div>
+      </div>
+      <hr/>
+
+
+      <!-- 表格 -->
+      <div class="am-padding">
+        <a href="menu_add.php" class="am-btn am-btn-success am-btn-xs"><i class="am-icon-file-o"></i> 添加菜单</a>
+        <form class="am-form-inline rex-margin-top-15" role="form">
+          <table class="am-table am-table-bordered am-table-striped am-table-compact am-text-center">
+            <thead class="rex-bg-primary" style="color: #fff;">
+            <tr>
+              <th class="am-text-center">排序</th>
+              <th class="am-text-center">菜单名称</th>
+              <th class="am-text-center">template_name</th>
+              <th class="am-text-center">action_name</th>
+              <th class="am-text-center">是否显示</th>
+              <th class="am-text-center">状态</th>
+              <th class="am-text-center">操作</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td class="dbclick rex-no-selected">
+                <span>0</span>
+                <input type="text" class="rex-margin-up-down-6 changeitems am-input-sm am-hide rex-input-inline am-form-field" placeholder="请输入修改后的内容">
+                <a href="javascript:;" class="changeitems am-hide rex-padding-left-right-15">保存</a>
+                <a href="javascript:;" class="changeitems am-hide cancel rex-padding-left-right-15">取消</a>
+              </td>
+              <td>
+                日报
+              </td>
+              <td></td>
+              <td>dailyreport/index</td>
+              <td><a href="javascript:;">是</a></td>
+              <td><a href="javascript:;">可用</a></td>
+              <td>
+                <a href="menu_edit.php?id=1" class="am-badge am-badge-secondary"><i class="am-icon-edit"></i> 编辑</a>
+                <a href="javascript:;" class="am-badge am-badge-danger"><i class="am-icon-trash"></i> 删除</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="dbclick rex-no-selected">
+                <span>1</span>
+                <input type="text" class="rex-margin-up-down-6 changeitems am-input-sm am-hide rex-input-inline am-form-field" placeholder="请输入修改后的内容">
+                <a href="javascript:;" class="changeitems am-hide rex-padding-left-right-15">保存</a>
+                <a href="javascript:;" class="changeitems am-hide cancel rex-padding-left-right-15">取消</a>
+              </td>
+              <td>
+                ┃日报列表
+              </td>
+              <td></td>
+              <td>dailyreport/list</td>
+              <td><a href="javascript:;">是</a></td>
+              <td><a href="javascript:;">可用</a></td>
+              <td>
+                <a href="menu_edit.php?id=2" class="am-badge am-badge-secondary"><i class="am-icon-edit"></i> 编辑</a>
+                <a href="javascript:;" class="am-badge am-badge-danger"><i class="am-icon-trash"></i> 删除</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="dbclick rex-no-selected">
+                <span>2</span>
+                <input type="text" class="rex-margin-up-down-6 changeitems am-input-sm am-hide rex-input-inline am-form-field" placeholder="请输入修改后的内容">
+                <a href="javascript:;" class="changeitems am-hide rex-padding-left-right-15">保存</a>
+                <a href="javascript:;" class="changeitems am-hide cancel rex-padding-left-right-15">取消</a>
+              </td>
+              <td>
+                ┃板块设置
+              </td>
+              <td>
+                wikimodule/index
+              </td>
+              <td>wikimodule/index</td>
+              <td><a href="javascript:;">是</a></td>
+              <td><a href="javascript:;">可用</a></td>
+              <td>
+                <a href="menu_edit.php?id=3" class="am-badge am-badge-secondary"><i class="am-icon-edit"></i> 编辑</a>
+                <a href="javascript:;" class="am-badge am-badge-danger"><i class="am-icon-trash"></i> 删除</a>
+              </td>
+            </tr>
+            </tbody>
+          </table>
+          <div>
+            <a href="javascript:;" class="am-btn am-btn-danger"><i class="am-icon-trash"></i> 清除缓存</a>
+          </div>
+        </form>
+
+
+      </div>
+
+      <!-- 分页 -->
+      <div class="am-padding">
+        <ul data-am-widget="pagination" class="am-pagination am-pagination-centered">
+             <li class="am-pagination-first ">
+               <a href="#" class="">第一页</a>
+             </li>
+             <li class="am-pagination-prev ">
+               <a href="#" class="">上一页</a>
+             </li>
+                   <li class="">
+                     <a href="#" class="">1</a>
+                   </li>
+                   <li class="am-active">
+                     <a href="#" class="am-active">2</a>
+                   </li>
+                   <li class="">
+                     <a href="#" class="">3</a>
+                   </li>
+                   <li class="">
+                     <a href="#" class="">4</a>
+                   </li>
+                   <li class="">
+                     <a href="#" class="">5</a>
+                   </li>
+             <li class="am-pagination-next ">
+               <a href="#" class="">下一页</a>
+             </li>
+             <li class="am-pagination-last ">
+               <a href="#" class="">最末页</a>
+             </li>
+         </ul>
+      </div>
+    <!-- content -->
+
+
+    </div>
+
+    <footer class="admin-content-footer am-text-center">
+      <hr>
+      <p class="am-padding-left">www.dailyyoga.com Copyright © 2012-2016</p>
+      <p class="am-padding-left">西安瑜乐软件科技有限公司</p>
+    </footer>
+
+  </div>
+  <!-- content end -->
+
+<script type="text/javascript" src="js/jq.js"></script>
+<script src="assets/js/amazeui.min.js"></script>
+<script type="text/javascript">
+  $(function(){
+    $('td.dbclick').dblclick(function(){
+      var vm = $(this);
+      vm.find('.changeitems').removeClass('am-hide');
+      vm.find('.cancel').click(function(){
+        vm.find('.changeitems').addClass('am-hide');
+      })
+    })
+  })
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

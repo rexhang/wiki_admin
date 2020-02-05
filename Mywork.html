@@ -1,0 +1,205 @@
+<!doctype html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>iframe-contents-template</title>
+  <meta name="description" content="这是一个 user 页面">
+  <meta name="keywords" content="user">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <link rel="stylesheet" href="assets/css/amazeui.min.css"/>
+  <link rel="stylesheet" href="assets/css/admin.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+<div class="am-cf admin-main" style="padding-top: 0;">
+
+
+  <!-- content start -->
+  <div class="admin-content">
+    <div class="admin-content-body">
+      <div class="am-cf am-padding am-padding-bottom-0">
+        <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">我的工作台</strong> / <small>Mywork</small></div>
+      </div>
+      <hr/>
+      <form class="am-form-inline am-padding" role="form">
+
+        <div class="am-form-group rex-margin-right-15">
+          <span>项目：</span>
+          <select class="am-input-sm am-form-field rex-width-200 rex-height-38">
+            <option value="">全部</option>
+            <option value="">H2</option>
+            <option value="">H2O</option>
+            <option value="">O2</option>
+            <option value="">……</option>
+          </select>
+        </div>
+
+        <div class="am-form-group rex-margin-right-15">
+          <span>版本：</span>
+          <select class="am-input-sm am-form-field rex-width-200 rex-height-38">
+            <option value="">全部</option>
+            <option value="">6.3.0</option>
+            <option value="">6.3.1</option>
+            <option value="">6.3.2</option>
+            <option value="">……</option>
+          </select>
+        </div>
+
+        <div class="am-form-group rex-margin-right-15">
+          <span>终端：</span>
+          <select class="am-input-sm am-form-field rex-width-200 rex-height-38">
+            <option value="">全部</option>
+            <option value="">ios</option>
+            <option value="">android</option>
+            <option value="">pad</option>
+            <option value="">……</option>
+          </select>
+        </div>
+        <div class="am-form-group rex-margin-right-15">
+          <span>内容：</span>
+          <input type="text" class="am-input-sm am-form-field rex-width-200 rex-height-38" placeholder="请输入内容">
+        </div>
+        <button type="button" class="am-btn am-btn-md am-btn-warning rex-margin-right-15"><i class="am-icon-search"></i> 搜索</button>
+        <button type="reset" class="am-btn am-btn-md am-btn-danger"><i class="am-icon-refresh"></i> 重置</button>
+
+
+
+      </form>
+
+
+
+      <!-- 表格 -->
+      <div class="am-padding">
+        <table class="am-table am-table-bordered am-table-striped am-table-compact am-text-center am-table-hover">
+          <thead class="rex-bg-success" style="color: #fff;">
+          <tr>
+            <th class="am-text-center">项目</th>
+            <th class="am-text-center">版本</th>
+            <th class="am-text-center">终端 </th>
+            <th class="am-text-center">模块</th>
+            <th class="am-text-center">内容</th>
+            <th class="am-text-center">状态</th>
+            <th class="am-text-center">备注</th>
+            <th class="am-text-center">操作</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td>H2</td>
+            <td>6.3.1</td>
+            <td>ios</td>
+            <td>你好啊模块</td>
+            <td>
+              <a href="task_info.php?id=1">【中】testcontent</a>
+            </td>
+            <td>新增任务</td>
+            <td>无备注</td>
+            <td>
+              <a href="work_assessment.php?id=10" class="am-btn am-btn-secondary am-btn-xs">
+                <i class="am-icon-mouse-pointer"></i> 评估
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>H2</td>
+            <td>6.3.1</td>
+            <td>ios</td>
+            <td>你好啊模块</td>
+            <td>
+              <a href="task_info.php?id=1">【低】testcontent</a>
+            </td>
+            <td>新增任务</td>
+            <td>无备注</td>
+            <td>
+              <a href="work_assessment.php?id=12" class="am-btn am-btn-secondary am-btn-xs">
+                <i class="am-icon-mouse-pointer"></i> 评估
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>H2</td>
+            <td>6.3.1</td>
+            <td>ios</td>
+            <td>你好啊模块</td>
+            <td>
+              <a href="task_info.php?id=1">【高】testcontent</a>
+            </td>
+            <td>新增任务</td>
+            <td>无备注</td>
+            <td>
+              <a href="work_assessment.php?id=13" class="am-btn am-btn-secondary am-btn-xs">
+                <i class="am-icon-mouse-pointer"></i> 评估
+              </a>
+            </td>
+          </tr>
+
+
+          </tbody>
+        </table>
+      </div>
+
+      <!-- 分页 -->
+      <div class="am-padding">
+        <ul data-am-widget="pagination" class="am-pagination am-pagination-centered">
+             <li class="am-pagination-first ">
+               <a href="#" class="">第一页</a>
+             </li>
+             <li class="am-pagination-prev ">
+               <a href="#" class="">上一页</a>
+             </li>
+                   <li class="">
+                     <a href="#" class="">1</a>
+                   </li>
+                   <li class="am-active">
+                     <a href="#" class="am-active">2</a>
+                   </li>
+                   <li class="">
+                     <a href="#" class="">3</a>
+                   </li>
+                   <li class="">
+                     <a href="#" class="">4</a>
+                   </li>
+                   <li class="">
+                     <a href="#" class="">5</a>
+                   </li>
+             <li class="am-pagination-next ">
+               <a href="#" class="">下一页</a>
+             </li>
+             <li class="am-pagination-last ">
+               <a href="#" class="">最末页</a>
+             </li>
+         </ul>
+      </div>
+    <!-- content -->
+
+
+    </div>
+
+    <footer class="admin-content-footer am-text-center">
+      <hr>
+      <p class="am-padding-left">www.dailyyoga.com Copyright © 2012-2016</p>
+      <p class="am-padding-left">西安瑜乐软件科技有限公司</p>
+    </footer>
+
+  </div>
+  <!-- content end -->
+
+
+<script type="text/javascript" src="js/jq.js"></script>
+<script src="assets/js/amazeui.min.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

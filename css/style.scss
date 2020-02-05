@@ -1,0 +1,291 @@
+// 主题色
+$primaryBgColor: #0e90d2; // 蓝色
+$secondaryBgColor: #3bb4f2; // 浅蓝
+$successBgColor: #5eb95e; // 绿色
+$warningBgColor: #F37B1D; // 橙色
+$dangerBgColor: #dd514c; // 红色
+
+
+// 宽高
+.rex-width-200{
+    width: 200px !important;
+}
+.rex-icon-width-height-46{
+    width: 46px;
+    height: 46px;
+    line-height: 30px;
+}
+.rex-width-300{
+    width: 300px !important;
+}
+.rex-width-240{
+    width: 240px !important;
+}
+.rex-width-80{
+    width: 80px;
+}
+.rex-height-38{
+    height: 38px;
+}
+.rex-width-30percent{
+    width: 30%;
+}
+.rex-width-25percent{
+    width: 25%;
+}
+.rex-width-50percent{
+    width: 50%;
+}
+.rex-height-200{
+    height: 200px !important;
+}
+
+// 背景色
+.rex-bg-primary{
+    background-color: $primaryBgColor !important;
+}
+.rex-bg-secondary{
+    background-color: $secondaryBgColor !important;
+}
+.rex-bg-success{
+    background-color: $successBgColor !important;
+}
+.rex-bg-warning{
+    background-color: $warningBgColor !important;
+}
+.rex-bg-danger{
+    background-color: $dangerBgColor !important;
+}
+
+// padding边距
+.rex-padding-up-down-14{
+    padding: 14px 0;
+}
+.rex-padding-up-down-6{
+    padding: 6px 0;
+}
+.rex-padding-left-right-15{
+    padding: 0 15px;
+}
+.rex-padding-left-28{
+    padding-left: 28px !important;
+}
+.rex-padding-right-28{
+    padding-right: 28px !important;
+}
+.rex-padding-top-100{
+    padding-top: 100px;
+}
+.rex-padding-bottom-15{
+    padding-bottom: 15px;
+}
+.rex-padding-top-15{
+    padding-top: 15px;
+}
+
+// margin边距
+.rex-margin-up-down-6{
+    margin: 6px 0;
+}
+.rex-margin-up-down-15{
+    margin: 15px 0;
+}
+.rex-margin-right-28{
+    margin-right: 28px !important;
+}
+.rex-margin-bottom-4{
+    margin-bottom: 4px !important;
+}
+.rex-margin-bottom-15{
+    margin-bottom: 15px !important;
+}
+.rex-margin-top-15{
+    margin-top: 15px !important;
+}
+.rex-margin-top-30{
+    margin-top: 30px !important;
+}
+.rex-margin-bottom-30{
+    margin-bottom: 30px !important;
+}
+.rex-margin-top-100{
+    margin-top: 100px !important;
+}
+.rex-margin-top-50{
+    margin-top: 50px !important;
+}
+.rex-margin-left-6{
+    margin-left: 6px !important;
+}
+.rex-margin-right-15{
+    margin-right: 15px;
+}
+
+// border
+.rex-border-eee{
+    border: 1px solid #eee;
+}
+
+// 排版
+.rex-vertical-align-middle{
+    vertical-align: middle;
+}
+
+
+// 字体颜色
+.rex-text-color-333{
+    color: #333;
+}
+.rex-text-color-666{
+    color: #666;
+}
+.rex-text-color-999{
+    color: #999;
+}
+.rex-text-color-000{
+    color: #000;
+}
+.rex-text-color-fff{
+    color: #fff;
+}
+.rex-text-color-primary{
+    color: $primaryBgColor !important;
+}
+.rex-text-color-secondary{
+    color: $secondaryBgColor !important;
+}
+.rex-text-color-success{
+    color: $successBgColor !important;
+}
+.rex-text-color-warning{
+    color: $warningBgColor !important;
+}
+.rex-text-color-danger{
+    color: $dangerBgColor !important;
+}
+
+// 边框
+.rex-border-1px{
+    border: 1px solid;
+}
+
+// 边框颜色
+.rex-border-color-333{
+    border-color: #333;
+}
+.rex-border-color-666{
+    border-color: #666;
+}
+.rex-border-color-999{
+    border-color: #999;
+}
+.rex-border-color-000{
+    border-color: #000;
+}
+.rex-border-color-fff{
+    border-color: #fff;
+}
+.rex-border-color-primary{
+    border-color: $primaryBgColor !important;
+}
+.rex-border-color-secondary{
+    border-color: $secondaryBgColor !important;
+}
+.rex-border-color-success{
+    border-color: $successBgColor !important;
+}
+.rex-border-color-warning{
+    border-color: $warningBgColor !important;
+}
+.rex-border-color-danger{
+    border-color: $dangerBgColor !important;
+}
+
+// 透明度
+.rex-opacity-5{
+    background-color: rgba(0,233,0,0.5)
+}
+
+// 元素
+.rex-textarea{
+    width: 100%;
+    height: 100px;
+    border: 0;
+    outline: 0;
+    color: #666;
+    font-size: 1.4rem;
+}
+.rex-input-inline{
+    display: inline;
+}
+.rex-input-inline-block{
+    display: inline-block;
+}
+.rex-input-block{
+    display: block;
+}
+.rex-img-box{
+    padding-bottom: 14px;
+}
+.rex-content{
+    text-indent: 3.2rem;
+    line-height: 2.2rem;
+    color: #666;
+    padding: 14px 0;
+}
+.rex-chatbox{
+    display: inline;
+}
+.rex-chatbox li{
+    list-style: none;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 12px;
+    margin-bottom: 15px;
+}
+.rex-chatbox li .contents{
+    font-size: 1.4rem;
+    color: #666;
+    padding-top: 6px;
+    text-indent: 2.8rem;
+}
+.rex-chatbox li > div > div > span.users{
+    font-size: 1.4rem;
+    margin-left: 12px;
+    color: #666;
+}
+.rex-chatbox li > div > div > p.time{
+    margin: 0;
+    padding: 0;
+    font-size: 1.4rem;
+    margin-left: 12px;
+    color: #999;
+}
+
+// radius
+.rex-radius{
+    border-radius: 50%;
+}
+
+// 妹子UI使用
+.am-table tbody tr td{
+    vertical-align: middle;
+    word-break: break-all;
+}
+
+
+// 通用
+.rex-no-selected{
+    -moz-user-select: -moz-none;
+    -moz-user-select: none;
+    -o-user-select:none;
+    -khtml-user-select:none; /* you could also put this in a class */
+    -webkit-user-select:none;/* and add the CSS class here instead */
+    -ms-user-select:none;
+    user-select:none;/**禁止选中文字*/
+}
+
+/*placeholder样式设置*/
+::-webkit-input-placeholder {
+    font-size: 1.4rem;
+}
